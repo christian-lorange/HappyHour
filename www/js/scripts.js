@@ -309,7 +309,7 @@ $(document).ready(function() {
         '</td>' +
         '</tr>');
       if (location['has-drink'] === true || location['has-drink'] === "true") {
-        $('#item-' + index + ' .food-drink').first().append('<img src="img/drinkicon.ico" class="img-responsive" alt="" />');
+        $('#item-' + index + ' .food-drink').first().append('<img src="img/drinkicon.png" class="img-responsive" alt="" />');
       }
       if (location['has-food'] === true || location['has-food'] === "true") {
         $('#item-' + index + ' .food-drink').last().append('<img src="img/foodicon.png" class="img-responsive" alt="" />');
