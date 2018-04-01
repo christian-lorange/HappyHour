@@ -123,7 +123,6 @@
     <splash height="480" platform="ios" src="res/screens/ios/Default~iphone.png" width="320" />
 </platform>
 
-
    <!-- <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
     </gap:config-file> -->
