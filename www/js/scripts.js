@@ -387,7 +387,7 @@ $(document).ready(function() {
       displayData(toDisplay);
     } else {
       $('#error-message').remove();
-      $('#main-content').append('<h2 class="text-center lead" id="error-message">There are no locations that match your search criteria</h2>');
+      $('#main-content').append('<h2 class="text-center lead" id="error-message">Womp womp. Doesnt appear there are any locations that match your search criteria.</h2>');
     }
   });
 

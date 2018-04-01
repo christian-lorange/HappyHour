@@ -11,6 +11,7 @@
     <script src="js/scripts.js"></script>
 
    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+   
 
 
   </head>
@@ -21,6 +22,14 @@
           <h1><a href="index.html">Fun in Fort Collins</a></h1>
         </div>
         </div>
+
+<button class="accordion">About the App</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Table Key</button>
+<div class="panel">
       <div class="row" id="key">
         <div class="col-md-6">
           <img src="img/drinkicon.ico" class="key-icon"><p class="key-text"> Happy Hour Drinks</p>
@@ -45,9 +54,11 @@
           <img src="img/hard.png" class="key-icon"><p class="key-text"> Hard Parking </p>
         </div>
       </div>
-      <div class="row" id="results-content">
-        <!-- sidebar -->
-        <div class="col-md-2" id="filter">
+</div>
+
+<button class="accordion">Filter Results</button>
+<div class="panel">
+<div class="col-md-2" id="filter">
           <form id="filter-form">
             <div class="form-group checkbox">
               <h3>Area:</h3>
@@ -73,7 +84,7 @@
               <label class="filter-checkbox"><input type="checkbox" name="other-amenities" value="hard">Hard Parking</label>
             </div>
             <div class="form-group">
-              <h3>Select Your Happiest Hour:</h3>
+              <h3>Happy Hour Time:</h3>
               <select class="form-control" name="hour">
                 <option></option>
                 <option value="1000">10:00 am</option>
@@ -120,7 +131,13 @@
             <button type="button" id="add-location-button">Add Location</button>-->
           </form>
         </div>
-        <div class="col-md-10" id="main-content">
+
+</div>
+
+
+      <div class="row" id="results-content">
+        <!-- sidebar -->
+                <div class="col-md-10" id="main-content">
           <table class="table-striped table">
             <thead>
               <td>Drink
@@ -824,5 +841,28 @@
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+    </script>
+
+
   </body>
 </html>

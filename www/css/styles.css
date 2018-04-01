@@ -1,3 +1,8 @@
+body {
+background-color: #FFFFFF;
+width: 100vw;
+}
+
 @font-face {
   src: url(../fonts/Lato.ttf);
   font-family: Lato;
@@ -9,10 +14,10 @@
 
 h1 {
   font-family: Lato;
-  font-size: 60px;
+  font-size: 40px;
   color: #000;
   margin-left: 20px;
-  margin-top: 45px;
+  margin-top: 15px;
 }
 
 .about-h2 {
@@ -49,7 +54,7 @@ h1 {
 
 #header {
   border-bottom: 2px solid black;
-  height: 150px;
+
   /*display: flex;
   align-items: center;
   justify-content: center;*/
@@ -186,7 +191,7 @@ div.panel.panel-default {
 
 .amenities img {
   display: inline-block;
-  width: 10%;
+  width: 20%;
   margin-right: 4%;
 }
 
@@ -217,7 +222,7 @@ div.panel.panel-default {
 
 td {
   font-family: Lato;
-  font-size: 18px;
+  font-size: 10px;
   padding-bottom: 20px;
 }
 
@@ -351,30 +356,46 @@ td {
 
 }
 
-@media screen and (max-width: 1460px) {
-  h1 {
-    font-size: 50px;
-  }
-  #nav li {
-    font-size: 20px;
-    float: none;
-  }
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: green;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 20px;
+    border-style: solid;
+    margin-bottom: 3px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
 }
 
-@media screen and (max-width: 985px) {
-  #carousel {
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
     display: none;
-  }
-  #call-out-button {
-    font-size: 30px;
-  }
-  #header {
-    height: 250px;
-  }
+    overflow: hidden;
 }
 
-@media screen and (max-width: 750px) {
-  h1 {
-    font-size: 30px;
-  }
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
