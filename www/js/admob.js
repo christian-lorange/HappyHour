@@ -6,17 +6,17 @@ var admobid = {};
 // select the right Ad Id according to platform
 if( /(android)/i.test(navigator.userAgent) ) { 
     admobid = { // for Android
-        banner: 'ca-app-pub-3670000423095472/3826999342',
+        banner: 'ca-app-pub-3940256099942544/6300978111',
         interstitial: 'ca-app-pub-3670000423095472/5303732548'
     };
 } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
     admobid = { // for iOS
-        banner: 'ca-app-pub-3670000423095472/3826999342',
+        banner: 'ca-app-pub-3940256099942544/6300978111',
         interstitial: 'ca-app-pub-6869992474017983/7563979554'
     };
 } else {
     admobid = { // for Windows Phone
-        banner: 'ca-app-pub-3670000423095472/3826999342',
+        banner: 'ca-app-pub-3940256099942544/6300978111',
         interstitial: 'ca-app-pub-3670000423095472/5303732548'
     };
 }
@@ -37,17 +37,17 @@ var admobid = {};
 // select the right Ad Id according to platform
 if( /(android)/i.test(navigator.userAgent) ) { 
     admobid = { // for Android
-        banner: 'ca-app-pub-3670000423095472/3826999342',
+        banner: 'ca-app-pub-3940256099942544/6300978111',
         interstitial: 'ca-app-pub-3670000423095472/5303732548'
     };
 } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
     admobid = { // for iOS
-        banner: 'ca-app-pub-3670000423095472/3826999342',
+        banner: 'ca-app-pub-3940256099942544/6300978111',
         interstitial: 'ca-app-pub-3670000423095472/5303732548'
     };
 } else {
     admobid = { // for Windows Phone
-        banner: 'ca-app-pub-3670000423095472/3826999342',
+        banner: 'ca-app-pub-3940256099942544/6300978111',
         interstitial: 'ca-app-pub-3670000423095472/5303732548'
     };
 }
