@@ -6,7 +6,7 @@
         id        = "com.orangehousehappyhour.app"
         version   = "1.0.0">
 
-    <name>HHAp - Fort Collins</name>
+    <name>HHAp Fort Collins</name>
 
     <description>
         List of Restaurants, Bars, and Breweries in Fort Collins Colorado
@@ -64,7 +64,7 @@
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-vibration" />
 
-    <plugin name="phonegap-admob" />
+    <gap:plugin name="com.admob.plugin" version="3.0.0" source="plugins.cordova.io" />
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
