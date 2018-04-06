@@ -9,52 +9,14 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/seededData.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/admob.js"></script>
 
    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
 
-   <script type="text/javascript">
-   
-    function onLoad() {
-      // body...
-
-    document.removeEventListener('deviceready', onDeviceReady, false);
-
-   function onDeviceReady() {
   
 
-    // Set AdMobAds options:
-    admob.setOptions({
-        publisherId:          "pub-7061349157136298",  // Required
-        bannerAdId:           "ca-app-pub-7061349157136298/5439013537"
-        
-
-    });
-
-    // Start showing banners (atomatic when autoShowBanner is set to true)
-  admob.createBannerView();
-
-}
-
-document.addEventListener("deviceready", onDeviceReady, false);
-
-    </script>
-
-<script type="text/javascript">
-    function showBanner(){
-
-admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
-
-alert('banner show');
-
-}
-    }
-
-</script>
-
-
-
   </head>
-  <body onload="onLoad">
+  <body onload="domLoaded()">
     <div class="container-fluid">
       <div class="row" id="header">
         <div class="col-md-6">
