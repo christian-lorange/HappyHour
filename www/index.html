@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Food in the Fort</title>
+    <title>HHAp - Fort Collins</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
@@ -12,14 +12,39 @@
 
    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
 
+   <script type="text/javascript">
+   function onDeviceReady() {
+    document.removeEventListener('deviceready', onDeviceReady, false);
 
+    // Set AdMobAds options:
+    admob.setOptions({
+        publisherId:          "ca-app-pub-3940256099942544/6300978111",  // Required
+        
+
+    });
+}
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+    </script>
+
+<script type="text/javascript">
+    function showBanner(){
+
+admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
+
+alert('banner show');
+
+</script>
+
+}
 
   </head>
   <body>
     <div class="container-fluid">
       <div class="row" id="header">
         <div class="col-md-6">
-          <h1><a href="index.html">Food in the Fort</a></h1>
+          <h1><a href="index.html">HHAp - Fort Collins</a></h1>
         </div>
         </div>
 
@@ -29,7 +54,7 @@
 
   <p>We built this simple app to help us keep track of it all. We found ourselves going to the same couple places over and over. Not because they were superior to everything else (although we do have our favorites - <b>Tacos for Life! </b>) but because they were the ones at the front of our memories. </p>
 
-  <p>Food in the Fort is a list of ~100 restaurants, bars, and breweries in Fort Collins, CO. You can sort by cost, location in town, and ammentities such as outdoor patios and dog friendly establishments. You can also check on happy hour times and offerings around town.</p>
+  <p>HHAP - Fort Collins (the Happy Hour App for Fort Collins) is a list of ~100 restaurants, bars, and breweries in Fort Collins, CO. You can sort by cost, location in town, and ammentities such as outdoor patios and dog friendly establishments. You can also check on happy hour times and offerings around town.</p>
 
   <p>We've done our best to try and only include accurate information. That said, we cannot make any guarantees regarding the current accuracy of the content included in this app. Know of information that needs to be updated? Think we should add another location? Let us know by sending a message to info@orangehousellc.com. </p>
 </div>
