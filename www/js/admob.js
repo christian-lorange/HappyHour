@@ -7,26 +7,22 @@ var admobid = {};
 if( /(android)/i.test(navigator.userAgent) ) { 
     admobid = { // for Android
         banner: 'ca-app-pub-3940256099942544/6300978111',
-        interstitial: 'ca-app-pub-3670000423095472/5303732548'
+        //interstitial: 'ca-app-pub-3670000423095472/5303732548'
     };
-} else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
-    admobid = { // for iOS
-        banner: 'ca-app-pub-3940256099942544/6300978111',
-        interstitial: 'ca-app-pub-6869992474017983/7563979554'
-    };
-} else {
-    admobid = { // for Windows Phone
-        banner: 'ca-app-pub-3940256099942544/6300978111',
-        interstitial: 'ca-app-pub-3670000423095472/5303732548'
-    };
-}
+} // else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+  //  admobid = { // for iOS
+  //      banner: 'ca-app-pub-3940256099942544/6300978111',
+  //      interstitial: 'ca-app-pub-6869992474017983/7563979554'
+    //};
+//} 
+else {}
 
 if(AdMob) AdMob.createBanner( {
     adId:admobid.banner, 
     position:AdMob.AD_POSITION.BOTTOM_CENTER, 
     autoShow:true} );
 
-   if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} ); 
+  
 
 }
 
@@ -38,26 +34,22 @@ var admobid = {};
 if( /(android)/i.test(navigator.userAgent) ) { 
     admobid = { // for Android
         banner: 'ca-app-pub-3940256099942544/6300978111',
-        interstitial: 'ca-app-pub-3670000423095472/5303732548'
+        //interstitial: 'ca-app-pub-3670000423095472/5303732548'
     };
-} else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
-    admobid = { // for iOS
-        banner: 'ca-app-pub-3940256099942544/6300978111',
-        interstitial: 'ca-app-pub-3670000423095472/5303732548'
-    };
-} else {
-    admobid = { // for Windows Phone
-        banner: 'ca-app-pub-3940256099942544/6300978111',
-        interstitial: 'ca-app-pub-3670000423095472/5303732548'
-    };
-}
+} //else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+  //  admobid = { // for iOS
+  //      banner: 'ca-app-pub-3940256099942544/6300978111',
+  //      interstitial: 'ca-app-pub-3670000423095472/5303732548'
+  //  };
+//} 
+else {}
 
 if(AdMob) AdMob.createBanner( {
     adId:admobid.banner, 
     position:AdMob.AD_POSITION.BOTTOM_CENTER, 
     autoShow:true} );
 
-   if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} ); 
+  
 
 }
 
