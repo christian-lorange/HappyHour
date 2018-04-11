@@ -13,23 +13,22 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/seededData.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/accordion.js"></script>
 
 
 </head>
 <body>
-  <h1>Hello AdMob</h1>
-  <button id="showAd">Show me some AD</button>
 
-
-<div class="container-fluid">
-      <div class="row" id="header">
+        <div class="row" id="header">
         <div class="col-md-6">
-          <h1><a href="index.html">HHAp - Fort Collins</a></h1>
+          <h2><a href="index.html">HHAp - Fort Collins</a></h2>
         </div>
         </div>
 
-<button class="accordion">About the App</button>
-<div class="panel">
+<div class="accordion">
+      <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-1">About the HHAp - Fort Collins</a>
+        <div id="accordion-1" class="accordion-section-content">
   <p>We live in an amazing town. As of last time we checked there was somewhere over 600 restaurants and bars in Fort Collins. That doesn't even count the breweries, cideries, and distilleries. All those options can also be a bit overwhelming sometimes. The paradox of choice. </p>
 
   <p>We built this simple app to help us keep track of it all. We found ourselves going to the same couple places over and over. Not because they were superior to everything else (although we do have our favorites - <b>Tacos for Life! </b>) but because they were the ones at the front of our memories. </p>
@@ -37,13 +36,12 @@
   <p>HHAP - Fort Collins (the Happy Hour App for Fort Collins) is a list of ~100 restaurants, bars, and breweries in Fort Collins, CO. You can sort by cost, location in town, and ammentities such as outdoor patios and dog friendly establishments. You can also check on happy hour times and offerings around town.</p>
 
   <p>We've done our best to try and only include accurate information. That said, we cannot make any guarantees regarding the current accuracy of the content included in this app. Know of information that needs to be updated? Think we should add another location? Let us know by sending a message to info@orangehousellc.com. </p>
+    </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
 
-  <button id="showAd">Show me some AD</button>
-
-</div>
-
-<button class="accordion">Table Key</button>
-<div class="panel">
+<div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-2">Icon Legend</a>
+        <div id="accordion-2" class="accordion-section-content">
       <div class="row" id="key">
         <div class="col-md-6">
           <img src="img/drinkicon.png" class="key-icon"><p class="key-text"> Happy Hour Drinks</p>
@@ -68,10 +66,14 @@
           <img src="img/hard.png" class="key-icon"><p class="key-text"> Hard Parking </p>
         </div>
       </div>
-</div>
 
-<button class="accordion">Filter Results</button>
-<div class="panel">
+        </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
+
+      <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-3">Filter Results</a>
+        <div id="accordion-3" class="accordion-section-content">
+
 <div class="col-md-2" id="filter">
           <form id="filter-form">
             <div class="form-group checkbox">
@@ -145,8 +147,13 @@
             <button type="button" id="add-location-button">Add Location</button>-->
           </form>
         </div>
+      </div>
 
-</div>
+        </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
+    </div><!--end .accordion-->
+
+<div class="container-fluid">
 
 
 
@@ -866,31 +873,13 @@
 
 
 
-    <script type="text/javascript">
-      var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
-
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
-    </script>
+</div>
 
 
 
 
-  <script type="text/javascript" src="cordova.js"></script>
+
+
   <script type="text/javascript" src="js/admob2.js"></script>
 </body>
 </html>
