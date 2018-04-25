@@ -60,6 +60,7 @@ h1 {
   justify-content: center;*/
   margin-left: 0;
   margin-right: 0;
+  text-align: center;
 }
 
 #nav {
@@ -380,9 +381,10 @@ td {
   background:#333;
   transition:all linear 0.15s;
   /* Type */
-  font-size:1.200em;
+  font-size:1.60em;
   text-shadow:0px 1px 0px #1a1a1a;
   color:#fff;
+  text-align: center;
 }
 
 .accordion-section-title.active, .accordion-section-title:hover {
@@ -404,3 +406,30 @@ td {
 
 
 a.accordion-section-title:hover {color: green; font-weight: bolder;}
+
+
+#gmnoprint {z-index: -999 !important;}
+
+.screen_switch {
+  width: 100%;
+  background-color: gray;
+  font-weight: bolder;
+  padding: 5px;
+margin-top: 10px;
+margin-bottom: 10px;
+  height: 50px;
+  font-size: 2.2em;
+}
+
+.section_title {
+  text-align: center;
+}
+
+.gm-style-iw {
+  width: 100%; 
+  min-height: 150px;
+}
+
+.info-window {
+  max-width: 100vw !important;
+}

@@ -3,10 +3,10 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.orangehousehappyhour.app"
+        id        = "com.orangehousehappyhourdev.app"
         version   = "1.0.4">
 
-    <name>HHAp Fort Collins</name>
+    <name>HHAp Fort Collins_dev</name>
 
     <description>
         List of Restaurants, Bars, and Breweries in Fort Collins Colorado
@@ -71,7 +71,7 @@
     <engine name="android" spec="6.4.0" />
     <engine name="ios" spec="~4.5.3" />
     <plugin name="cordova-plugin-whitelist" />
-    <plugin name="cordova-plugin-admob-free"  />
+    <!--<plugin name="cordova-plugin-admob-free"  />-->
 
 
     <!-- Third party plugins -->
