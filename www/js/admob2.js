@@ -6,8 +6,8 @@ if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
   }
 } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {  // for ios
   admobid = {
-    banner: 'ca-app-pub-7061349157136298~3403832978',
-    interstitial: 'ca-app-pub-7061349157136298~3403832978',
+    banner: 'ca-app-pub-7061349157136298/2571286977',
+    interstitial: 'ca-app-pub-7061349157136298/3755186763',
   }
 }
 
