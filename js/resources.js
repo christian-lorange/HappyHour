@@ -1,4 +1,4 @@
-//file updated at 07/11/18 10:05:55.428
+//file updated at 07/11/18 18:13:09.879
 
 
 
@@ -60,7 +60,7 @@ $filterCheckboxes.on('change', function() {
 
 
   setTimeout(function(){
- $("#venues").load( "https://rawgit.com/christian-lorange/happyhour_dev/master/hh.html" );
+ $("#venues").load( "https://rawgit.com/christian-lorange/happyhour/master/hh.html" );
   },200);
 
  
@@ -72,7 +72,7 @@ $filterCheckboxes.on('change', function() {
 
   setTimeout(function(){
 
-   $("#modal-content").load("https://rawgit.com/christian-lorange/happyhour_dev/master/cards.html");
+   $("#modal-content").load("https://rawgit.com/christian-lorange/happyhour/master/cards.html");
   
    var d = new Date();
    var n = d.getDay();
