@@ -1,6 +1,4 @@
-//file updated at 07/11/18 19:00:10.210
-
-
+//file updated at 07/28/18 07:56:18.537
 
 
 
@@ -68,7 +66,7 @@ $filterCheckboxes.on('change', function() {
  
   function days() {
 
-    var x = document.getElementsByClassName("card");
+   var x = document.getElementsByClassName("card");
     var y = document.getElementsByClassName("btn btn-link");
     var z = document.getElementById("refresh_btn");
 
@@ -94,7 +92,7 @@ $filterCheckboxes.on('change', function() {
     z.style.height = "30px";
     z.style.fontWeight = "bolder";
     z.style.fontSize = "1.2em";
-
+ 
 
 
   setTimeout(function(){
