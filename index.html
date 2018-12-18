@@ -83,14 +83,15 @@ function CallButton()
 }
 </script>
 
+<!--Trigger for app review -->
 <script type="text/javascript">
-setTimeout("reviews()",1000)
+setTimeout("reviews()",5000)
 function reviews()
 {
   AppRate.preferences.storeAppURL.android = 'market://details?id=com.orangehousehappyhour.app';
   AppRate.preferences.openStoreInApp = true;
   AppRate.preferences.displayAppName = 'HHAP Fort Collins';
-  AppRate.preferences.usesUntilPrompt = 1;
+  AppRate.preferences.usesUntilPrompt = 3;
   AppRate.preferences.promptAgainForEachNewVersion = false;
 
   AppRate.promptForRating();
