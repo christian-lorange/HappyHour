@@ -67,10 +67,10 @@
 
 
     <!-- Ratings plug -->
-    <plugin name="cordova-plugin-apprate" version="1.1.5" />
-    <plugin name="cordova-plugin-globalization" version="0.3.1" />
-	<plugin name="cordova-plugin-inappbrowser" version="0.5.2" />
-	<plugin name="cordova-plugin-dialogs" version="0.2.10" />
+    <plugin name="cordova-plugin-apprate" />
+    <plugin name="cordova-plugin-globalization"/>
+	<plugin name="cordova-plugin-inappbrowser"/>
+	<plugin name="cordova-plugin-dialogs" />
 
  
 
