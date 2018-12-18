@@ -76,6 +76,22 @@ function showSlides(n) {
 setTimeout("CallButton()",30000)
 function CallButton()
 {
+  
+  AppRate.preferences.storeAppURL.android = 'market://details?id=*com.orangehousehappyhour*';
+  AppRate.preferences.openStoreInApp = true;
+  AppRate.preferences.displayAppName = 'HHAP Fort Collins';
+  AppRate.preferences.usesUntilPrompt = 1;
+  AppRate.preferences.promptAgainForEachNewVersion = false;
+
+  AppRate.promptForRating();
+
+}
+</script>
+
+<script type="text/javascript">
+setTimeout("reviews()",300)
+function reviews()
+{
    admob.interstitial.show() 
 }
 </script>

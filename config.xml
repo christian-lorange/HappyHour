@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.orangehousehappyhour.app"
-        version   = "1.0.10">
+        version   = "1.0.11">
 
     <name>HHAp Fort Collins</name>
 
@@ -63,6 +63,14 @@
 
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
+
+
+
+    <!-- Ratings plug -->
+    <gap:plugin name="org.pushandplay.cordova.apprate" version="1.1.5" />
+    <gap:plugin name="org.apache.cordova.globalization" version="0.3.1" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+	<gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
 
  
 
