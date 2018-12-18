@@ -68,9 +68,6 @@
 
     <!-- Ratings plug -->
     <plugin name="cordova-plugin-apprate" />
-    <plugin name="cordova-plugin-globalization"/>
-	<plugin name="cordova-plugin-inappbrowser"/>
-	<plugin name="cordova-plugin-dialogs" />
 
  
 
@@ -81,7 +78,7 @@
     <engine name="android" spec="6.4.0" />
     <engine name="ios" spec="~4.5.3" />
     <plugin name="cordova-plugin-whitelist" />
-    <plugin name="cordova-plugin-admob-free"  />
+    <plugin name="cordova-plugin-admob-free"  spec="0.19.0"/>
 
 
     <!-- Third party plugins -->
