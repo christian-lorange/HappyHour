@@ -98,6 +98,44 @@ fwrite(fid2,ZZ) ;
 fclose (fid2) ;
 
 
+
+%% Live Map Pins
+s1="{@name@:@"
+s2="@,@lat@: @"
+s3="@,@lng@:@"
+s4="@},"
+
+pin=[];
+
+for i=1:height(data)
+
+pin_temp=strcat(s1,char(table2array(data(i,1))),s2,num2str(table2array(data(i,58))),s3,num2str(table2array(data(i,59))),s4);
+
+pin=strcat(pin, pin_temp);    
+    
+end
+
+pinx=strcat('var pin = [',pin,'];',' ',ZZ);
+
+filePh = fopen('js/pins.js','w');
+fprintf(filePh,'%s\n',pinx);
+fclose(filePh);
+
+fid = fopen('js/pins.js','rt') ;
+X = fread(fid) ;
+fclose(fid) ;
+X = char(X.') ;
+% replace string S1 with string S2
+Y = strrep(X, '},]', '}]') ;
+Z = strrep(Y, '@', '"') ;
+ZZ = strrep(Z, 'NaN', '0') ;
+fid2 = fopen('js/pins.js','wt') ;
+fwrite(fid2,ZZ) ;
+fclose (fid2) ;
+
+
+%%  asd
+
 s1='<b>Name:</b>'; %{Name}
 s2=strcat('<br><b>Address:</b><a href=','''','http://maps.google.com/?q=');% {Location}
 s2b=strcat('''',' target=','''','_system','''',' title=','''','Directions','''','>');

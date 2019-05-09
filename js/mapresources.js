@@ -1,4 +1,4 @@
-//file updated at 04/30/19 08:56:01.299
+//file updated at 04/30/19 14:36:18.453
 
 
 function days() {
@@ -303,6 +303,14 @@ var gps=[ [40.531728,-105.076154], [40.584597,-105.077343], [40.58526,-105.07653
     geolocate.onclick = function (e) {
 
         var geomodal = document.getElementById('geomyModal');
+
+        navigator.geolocation.getCurrentPosition(function(position) {
+                        var latLng = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude
+                        };
+
+                        
         geomodal.style.display = "block";
 
         e.preventDefault();
