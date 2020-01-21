@@ -33,8 +33,10 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     ga_anl('send', 'pageview', {'page': 'index.html'});  
 
     function venuecheck (location) {
-    var selectedvenue = location.value;
+
+    var selectedvenue = ($(location).attr('value'))
     ga_anl('send', 'event', 'Venue', 'Viewed Happy Hour', selectedvenue)
+
     }
 
 
@@ -52,7 +54,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
   <script type="text/javascript" src="js/hh.js"></script> 
-<script type="text/javascript" src="https://rawgit.com/christian-lorange/happyhour/master/js/resources.js"></script>
+<script type="text/javascript" src="https://raw.githack.com/christian-lorange/HappyHour/master/js/resources.js"></script>
 <!--<script type="text/javascript" src="js/resources.js"></script>-->
 
 

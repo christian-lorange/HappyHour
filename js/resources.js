@@ -60,7 +60,7 @@ $filterCheckboxes.on('change', function() {
 
 
   setTimeout(function(){
- $("#venues").load( "https://rawgit.com/christian-lorange/happyhour/master/hh.html" );
+ $("#venues").load( "https://raw.githack.com/christian-lorange/happyhour/master/hh.html" );
   },200);
 
 
@@ -77,7 +77,7 @@ $filterCheckboxes.on('change', function() {
 
   setTimeout(function(){
 
-   $("#modal-content").load("https://rawgit.com/christian-lorange/happyhour/master/cards.html");
+   $("#modal-content").load("https://raw.githack.com/christian-lorange/happyhour/master/cards.html");
   
    var d = new Date();
    var n = d.getDay();
