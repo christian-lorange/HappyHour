@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.orangehousehappyhour.app"
-        version   = "1.0.18">
+        version   = "1.0.19">
 
     <name>HHAp Fort Collins</name>
 
@@ -66,9 +66,8 @@
 
 
 
-     <gap:plugin name="com.ezartech.ezar.videooverlay" source="npm"/>
    
- 
+
 
 
  <content src="index.html" />
