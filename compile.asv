@@ -3,7 +3,7 @@ clear all
 data=readtable('database_working.xlsx');
 
 s1='<div class="venue" data-id="aloe" data-category="';  %add in categories
-s2='" onclick="venuecheck(this);openModal();currentSlide('; %add in index number
+s2='" onclick="venuecheck(this)openModal();currentSlide('; %add in index number
 s3=')" value="'
 s3b='"> <span class="location">'; %add in location name
 s4='</span><span class="area">'; %add in area
