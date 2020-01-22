@@ -5,7 +5,7 @@ data=readtable('database_working.xlsx');
 s1='<div class="venue" data-id="aloe" data-category="';  %add in categories
 s2='" onclick="openModal();currentSlide('; %add in index number
 s3="); ga_anl('send', 'event', 'Venue', 'Viewed Happy Hour', "
-s3b=')"> <span class="location">'; %add in location name
+s3b='))"> <span class="location">'; %add in location name
 s4='</span><span class="area">'; %add in area
 s5='</span> <span class="sunday hh_t">'; %add in sunday
 s6='</span><span class="monday hh_t">'; %add in monday
