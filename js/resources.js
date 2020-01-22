@@ -1,4 +1,4 @@
-//file updated at 01/22/20 12:23:42.712
+//file updated at 01/22/20 12:41:17.673
 
 
 
@@ -60,7 +60,7 @@ $filterCheckboxes.on('change', function() {
 
 
   setTimeout(function(){
- $("#venues").load( "https://rawgit.com/christian-lorange/happyhour/master/hh.html" );
+ $("#venues").load( "https://raw.githack.com/christian-lorange/happyhour/master/hh.html" );
   },200);
 
  
@@ -76,7 +76,7 @@ $filterCheckboxes.on('change', function() {
 
   setTimeout(function(){
 
-   $("#modal-content").load("https://rawgit.com/christian-lorange/happyhour/master/cards.html");
+   $("#modal-content").load("https://raw.githack.com/christian-lorange/happyhour/master/cards.html");
   
    var d = new Date();
    var n = d.getDay();
