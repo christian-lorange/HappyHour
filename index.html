@@ -34,7 +34,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
     function venuecheck (location) {
 
-    var selectedvenue = ($(location).attr('value'))
+    var selectedvenue = (location.value)
     ga_anl('send', 'event', 'Venue', 'Viewed Happy Hour', selectedvenue)
 
     }

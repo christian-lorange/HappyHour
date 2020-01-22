@@ -1,4 +1,4 @@
-//file updated at 01/22/20 12:41:17.673
+//file updated at 01/22/20 13:09:07.352
 
 
 
@@ -62,6 +62,8 @@ $filterCheckboxes.on('change', function() {
   setTimeout(function(){
  $("#venues").load( "https://raw.githack.com/christian-lorange/happyhour/master/hh.html" );
   },200);
+
+  
 
  
   function days() {
